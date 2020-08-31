@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONTAJE FERIA DEL MILLON</title>
+  <link rel="icon" type="control-de-ciber-cliente.png">
+
+
+</head>
+
+<body>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+  
+  <!--Environment extension-->
+  <title>360 molinari</title>
+  <a-scene>
+    <a-entity id="rig" movement-controls kinematic-body>
+      <a-entity id="camera" camera position="0 2 6" look-controls cursor="rayOrigin: mouse"></a-entity>
+    </a-entity>
+    <a-assets>
+      <img id="sky" src="./grabient21.png">
+      <img id="my-image" src="./no.jpg">
+      <img id="obra1" src="./montaje.png">
+      <img id="obra2" src="./obras/des.png">
+      <img id="obra3" src="./obras/Metatrip-III.png">
+      <img id="obra4" src="./obras/espacio-metanoico3.png">
+      <img id="obra5" src="./obras/Decantamiento-II.png">
+      <img id="obras6" src="./obras/es-metanoico.png">
+      <img id="obra7" src="./obras/metatrip.png" alt="">
+      <img id="obra8" src="./obras/Decantamiento-II.png" alt="">
+      <img id="obra9" src="./obras/Decantamiento-I.png" alt="">
+      <img id="obra10" src="./obras/Metatrip-II.png" alt="">
+      <img id="obra11" src="./obras/Espacioa-Metanoico-I.png" alt="">
+
+
+
+
+
+
+
+
+
+
+    </a-assets>
+    <!-- plano -->
+    <!-- pared -->
+    <a-box static-body color="#313234" depth="2" height="4" width="0.5" position="0 2.261 -0.636" scale="19.652 1.220 1.019"></a-box>
+
+    <a-box src="#obra2" depth="2" height="4" width="0.5" position="-1.877 3.633 0" scale="6.236 0.312 0.467"></a-box>
+    <a-box src="#obra3" depth="2" height="4" width="0.5" position="1.869 0.768 0" scale="6.236 0.312 0.467"></a-box>s
+
+
+    <a-box src="#obra4" depth="2" height="4" width="0.5" position="-0.020 2.217 0" scale="6.236 0.312 0.467"></a-box>
+
+
+    <a-box src="#obras6" depth="2" height="4" width="0.5" position="-2.812 2.217 0" scale="2.522 0.312 0.467"></a-box>
+    <a-box src="#obra7" depth="2" height="4" width="0.5" position="-2.812 0.768 0" scale="2.522 0.312 0.467"></a-box>
+    <a-box src="#obra9" depth="2" height="4" width="0.5" position="0.900 3.633 0" scale="2.522 0.312 0.467"></a-box>
+    <a-box src="#obra8" depth="2" height="4" width="0.5" position="2.753 3.633 0" scale="2.522 0.312 0.467"></a-box>
+
+    <a-box src="#obra10" depth="2" height="4" width="0.5" position="-0.924 0.768 0" scale="2.522 0.312 0.467"></a-box>
+<a-box src="#obra11" depth="2" height="4" width="0.5" position="2.753 2.220 0" scale="2.522 0.312 0.467"></a-box>   
+<a-plane color="#CCC" height="20" width="20" rotation="-90 0 0" position="0 -0.1817 0" material=" opacity:  0.39;"></a-plane>
+
+    <a-sky src="#sky" animation="property: rotation; to: 0 360 0; dur: 100000; easing: linear; loop: true"></a-sky>
+    <!-- luz -->
+    <a-light type="ambient" intensity="0.800" color="#666"></a-light>
+    <a-light type="directional" intensity="0.800" position="2 4 4"></a-light>
+    <a-light type="point" intensity="0.500" position="-16.45976 12.75024 4"></a-light>
+  </a-scene>
+</body>
+
+</html>
